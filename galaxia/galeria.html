@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Nuestro Álbum 📸</title>
+
+<link rel="stylesheet" href="galeria.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1>🌙 Nuestro Álbum 📸</h1>
+
+    <p class="subtitle">
+
+        Cada fotografía guarda un pedacito de nuestra historia.
+        Presiona cualquiera para descubrir su recuerdo. 💖
+
+    </p>
+
+    <div class="gallery">
+
+        <img src="fotos/Nosotros.jpg"
+             onclick="openPhoto(0)">
+
+        <img src="fotos/Ternura.jpg"
+             onclick="openPhoto(1)">
+
+        <img src="fotos/Sonrisa.jpg"
+             onclick="openPhoto(2)">
+
+        <img src="fotos/Rock.jpg"
+             onclick="openPhoto(3)">
+
+    </div>
+
+</div>
+
+<div id="viewer" class="viewer">
+
+    <span class="close" onclick="closePhoto()">
+        &times;
+    </span>
+
+    <button class="arrow left"
+            onclick="previousPhoto()">
+        ❮
+    </button>
+
+    <img id="viewerImage">
+
+    <button class="arrow right"
+            onclick="nextPhoto()">
+        ❯
+    </button>
+
+    <div class="memory-box">
+
+        <h2 id="memoryTitle"></h2>
+
+        <p id="memoryText"></p>
+
+    </div>
+
+</div>
+
+<script src="galeria.js"></script>
+
+</body>
+
+</html>
