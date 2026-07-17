@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Nuestro Álbum 📸</title>
+
+<link rel="stylesheet" href="galeria.css">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="intro">
+
+    <div class="intro-content">
+
+        <div class="intro-planet"></div>
+
+        <h1>
+            Bienvenida a
+            <br>
+            Nuestra Galaxia
+        </h1>
+
+    </div>
+
+</div>
+
+<div id="stars"></div>
+
+<div id="particles"></div>
+
+<div class="planet"></div>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <h1>🪐 Nuestra Galaxia 🪐</h1>
+
+    <p class="subtitle">
+
+        Cada fotografía guarda un pedacito de nuestra historia.
+        Presiona cualquiera para descubrir su recuerdo. 💖
+
+    </p>
+
+    <div class="gallery">
+
+        <img src="fotos/Nosotros.jpg"
+             onclick="openPhoto(0)">
+
+        <img src="fotos/Juego.jpg"
+             onclick="openPhoto(1)">
+
+        <img src="fotos/Locura.jpg"
+             onclick="openPhoto(2)">
+
+        <img src="fotos/Mirada.jpg"
+             onclick="openPhoto(3)">
+
+        <img src="fotos/1foto.jpg"
+             onclick="openPhoto(4)">
+
+        <img src="fotos/Roblox.jpg"
+             onclick="openPhoto(5)">
+
+        <img src="fotos/Susto.jpg"
+             onclick="openPhoto(6)">
+
+        <img src="fotos/Valerita.jpg"
+             onclick="openPhoto(7)">
+
+        <img src="fotos/Vale.jpg"
+             onclick="openPhoto(8)">
+
+        <img src="fotos/Votaciones.jpg"
+             onclick="openPhoto(9)">
+
+        <img src="fotos/Papi.jpg"
+             onclick="openPhoto(10)">
+
+        <img src="fotos/Vaquera.jpg"
+             onclick="openPhoto(11)">
+
+    </div>
+
+</div>
+
+<div id="viewer"
+     class="viewer"
+     onclick="if(event.target==this) closePhoto();">
+
+    <span class="close" onclick="closePhoto()">
+        &times;
+    </span>
+
+    <button class="arrow left"
+            onclick="previousPhoto()">
+        ❮
+    </button>
+
+    <img id="viewerImage"
+     alt="Nuestro recuerdo">
+
+    <button class="arrow right"
+            onclick="nextPhoto()">
+        ❯
+    </button>
+
+    <div class="memory-box">
+
+        <h2 id="memoryTitle"></h2>
+
+        <p id="memoryText"></p>
+
+    </div>
+
+</div>
+
+<script src="galeria.js"></script>
+
+</body>
+
+</html>
