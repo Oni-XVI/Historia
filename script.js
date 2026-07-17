@@ -183,7 +183,7 @@
 
       "👀 No existe luz más bonita que la que brilla en tus ojos.",
 
-      "🏡 Eres mi lugar calido seguro.",
+      "🏡 Eres mi refugio favorito, ese lugar donde me siento completamente a salvo.",
 
       "🌌 Eres la paz que calma mi mundo entero."
 
